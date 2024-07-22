@@ -1,0 +1,40 @@
+{
+  "name": "digital-atlas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "copy-cesium-assets": "cpx \"node_modules/cesium/Build/Cesium/**\" public/cesium"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cesium": "^1.119.0",
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-compare-slider": "^3.1.0",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.25.1",
+    "resium": "^1.17.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "cpx": "^1.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.3.4"
+  },
+  "homepage": "https://damaris01049.github.io/Peri-Urbanization-Dynamics-Digital-Atlas"
+}
